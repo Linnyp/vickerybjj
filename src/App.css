@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Lobster&display=swap");
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  font-size: 1em;
+  background-color: black;
+}
+
+.navbar a {
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 red;
+  color: rgba(255, 255, 255, 0.363);
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  box-shadow: inset 350px 0 0 0 rgba(255, 8, 0, 0.63);
+  color: aliceblue;
+}
+
+.social-links a {
+  margin: 1rem 1rem;
+}
+
+.nav-links {
+  margin: auto;
+  max-width: 1024px;
+  border-style: solid;
+  border-width: 2px 0px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-container {
+  margin: auto;
+  max-width: 2024px;
+  background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
+  background-size: cover;
+}
+
+.logo-container img {
+  opacity: 0.8;
+  width: 20%;
+  min-width: 300px;
+  max-width: 400px;
+  border-radius: 35%;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.home-container {
+  margin: auto;
+  max-width: 1024px;
+}
+
+.home-container > h1 {
+  font-family: "Lobster", cursive;
+  background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
+  background-size: cover;
+  color: rgba(252, 0, 0, 0.5);
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.home-container > p {
+  padding: 0 3rem;
+  margin-bottom: 3rem;
+  line-height: 2;
+}
+
+.calandar-container {
+  margin-top: 3rem;
+}
+
+.calandar,
+.map {
+  width: 75vw;
+  height: 75vh;
+}
+
+.location-container {
+  margin-top: 3rem;
+}
+
+.location-container p {
+  margin-bottom: 2rem;
+}
+
+/* 
+--------MEDIA QUERIES--------
+*/
+
+@media (max-width: 900px) {
+  .navbar {
+    position: relative;
+  }
+
+  .burger-opacity {
+    background: no-repeat
+      url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
+    background-size: cover;
+  }
+
+  .burger-container {
+    background-size: cover;
+    background-color: #ffffff14;
+    border-style: solid;
+    border-width: 2px 0px;
+    border-color: rgba(240, 248, 255, 0.308);
+  }
+
+  .burger-menu {
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(252, 252, 252, 0);
+    background-image: url("../src/images/icons8-menu-100.png");
+    background-size: cover;
+    display: block;
+    margin: 0.5rem auto;
+  }
+
+  .nav-links {
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    flex-direction: column;
+    background-color: rgba(223, 216, 216, 0.103);
+    backdrop-filter: blur(1rem);
+    transition: opacity 350ms ease-in;
+    transform: translateY(-500%);
+  }
+
+  .nav-links[data-visible="true"] {
+    position: absolute;
+    width: 100%;
+    transform: translateY(0%);
+    opacity: 1;
+  }
+
+  .nav-links[data-visible="true"] > a {
+    text-decoration: underline;
+  }
+
+  .nav-links a {
+    color: #861818;
+  }
+
+  .navbar a:hover {
+    box-shadow: inset 100vw 0 0 0 rgba(255, 8, 0, 0.63);
+    color: aliceblue;
+  }
+
+  .home-container > h1 {
+    font-size: larger;
+    margin-bottom: 1rem;
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .home-container > p {
+    font-size: large;
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+  }
+
+  .main-foot {
+    margin: 0;
+  }
+
+  .calandar,
+  .map {
+    width: 95vw;
+    height: 50vh;
+  }
+}
+
+/* 
+------------Utilities----------
+*/
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+/*   TESTING    */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(241, 241, 241);
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+}
+
+/* .columns {
+  columns: 4 250px;
+  column-rule: 2px solid;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: burlywood;
+  margin: auto;
+} */
