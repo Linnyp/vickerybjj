@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lobster&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Cedarville+Cursive&family=Kanit:ital,wght@1,300&family=Lobster&family=Luckiest+Guy&family=Permanent+Marker&display=swap");
 
 body {
   background-color: black;
@@ -10,22 +9,39 @@ body {
   background-color: black;
 }
 
-.navbar a {
+.nav-anchors {
+  font-family: "Luckiest Guy", cursive;
   text-decoration: none;
   box-shadow: inset 0 0 0 0 red;
-  color: rgba(255, 255, 255, 0.363);
+  color: #60656f;
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.navbar a:hover {
+.nav-anchors:hover {
   box-shadow: inset 350px 0 0 0 rgba(255, 8, 0, 0.63);
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   color: aliceblue;
 }
 
-.social-links a {
-  margin: 1rem 1rem;
+.social-links {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: right;
+}
+
+.social-links svg {
+  margin: 0rem 0.5rem;
+}
+
+.social-links svg:hover {
+  background-color: #fffcfc;
+  border-radius: 10px;
+}
+
+.social-links-mob {
+  display: none;
 }
 
 .nav-links {
@@ -33,14 +49,13 @@ body {
   max-width: 1024px;
   border-style: solid;
   border-width: 2px 0px;
-  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
 }
 
 .logo-container {
   margin: auto;
-  max-width: 2024px;
+  max-width: 1024px;
   background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
   background-size: cover;
 }
@@ -58,27 +73,39 @@ body {
 }
 
 .home-container {
+  color: #60656f;
+  background-color: #1f1d1d54;
   margin: auto;
   max-width: 1024px;
 }
 
-.home-container > h1 {
-  font-family: "Lobster", cursive;
-  background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
-  background-size: cover;
-  color: rgba(252, 0, 0, 0.5);
-  padding-top: 3rem;
-  margin-bottom: 3rem;
+.home-container :nth-child(4) {
+  margin-bottom: 0;
 }
 
-.home-container > p {
-  padding: 0 3rem;
+.main-header {
+  background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main-foot {
+  background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
+  background-size: cover;
+}
+
+.main-p-container > p {
+  color: white;
+  text-shadow: rgb(248, 58, 58) 1px 0 10px;
+  font-size: 1.3rem;
+  padding: 0 2rem;
   margin-bottom: 3rem;
   line-height: 2;
 }
 
 .calandar-container {
-  margin-top: 3rem;
+  margin-top: 2rem;
+  color: #60656f;
 }
 
 .calandar,
@@ -87,18 +114,168 @@ body {
   height: 75vh;
 }
 
+.instructor-title {
+  color: #60656f;
+  font-size: 2.5rem;
+  border: solid;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-radius: 25px;
+}
+.instructor-body {
+  border-radius: 20px;
+  background-color: #1f1d1d54;
+}
+
+.instructor-body > p {
+  text-shadow: rgb(248, 58, 58) 1px 0 10px;
+  line-height: 2;
+  font-size: 1rem;
+}
+
 .location-container {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .location-container p {
   margin-bottom: 2rem;
 }
 
+.slide-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.prev,
+.next {
+  padding: 0px 1rem;
+  color: rgba(255, 255, 255, 0.712);
+  background-color: rgba(29, 28, 28, 0.541);
+  font-size: 2rem;
+  position: absolute;
+  top: 2rem;
+  border-style: solid;
+  border-radius: 25px;
+}
+
+.next {
+  right: 1rem;
+}
+
+.prev {
+  left: 1rem;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.slide-container img {
+  width: 100%;
+  max-width: 750px;
+  max-height: 100vh;
+}
+
+.numbertext {
+  color: #f5e4e4;
+  font-size: 1.5rem;
+  position: absolute;
+}
+
+.contactpage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: no-repeat url("./images/Aesthetic-Black-Wallpaper-armbar2.jpg");
+  background-size: cover;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.contact-head {
+  color: #60656f;
+  margin-top: 2rem;
+  font-family: "Luckiest Guy", cursive;
+  text-decoration: underline;
+}
+
+.contact-card {
+  display: flex;
+  min-width: fit-content;
+  width: 85vw;
+  max-width: 700px;
+  backdrop-filter: blur(0.1rem);
+  background-color: #60656f91;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 8%;
+  padding: 10% 0;
+  border: 2px solid rgba(255, 255, 255, 0.363);
+  border-radius: 15px;
+}
+
+.contact-info {
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  margin: 1rem auto;
+  padding: 0;
+  justify-content: center;
+  max-width: 1024px;
+}
+
+i {
+  padding: 0px 10px;
+}
+
+.wrapper i:nth-child(1) {
+  color: #4867aa;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+}
+
+.wrapper i:nth-child(1):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8);
+}
+
+.wrapper i:nth-child(2) {
+  color: #d832a1;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+}
+
+.wrapper i:nth-child(2):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8);
+}
+
 /* 
 --------MEDIA QUERIES--------
 */
 
+@media (min-width: 800px) {
+  .slide-container img {
+    min-width: 750px;
+  }
+}
 @media (max-width: 900px) {
   .navbar {
     position: relative;
@@ -129,12 +306,21 @@ body {
     margin: 0.5rem auto;
   }
 
+  .burger-menu:hover {
+    cursor: pointer;
+  }
+
+  .social-links {
+    padding: 0;
+  }
+
   .nav-links {
     position: absolute;
+    z-index: 1;
     opacity: 0;
     margin: 0;
     flex-direction: column;
-    background-color: rgba(223, 216, 216, 0.103);
+    background-color: rgba(9, 8, 8, 0.57);
     backdrop-filter: blur(1rem);
     transition: opacity 350ms ease-in;
     transform: translateY(-500%);
@@ -152,34 +338,38 @@ body {
   }
 
   .nav-links a {
-    color: #861818;
+    color: white;
   }
 
   .navbar a:hover {
     box-shadow: inset 100vw 0 0 0 rgba(255, 8, 0, 0.63);
-    color: aliceblue;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .social-links-mob {
+    margin-top: 1rem;
+    position: absolute;
+    display: block;
+  }
+
+  .social-links-mob a {
+    padding: 0px 1rem;
   }
 
   .home-container > h1 {
-    font-size: larger;
+    background-size: cover;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .home-container > p {
-    font-size: large;
-    padding: 0 3rem;
-    margin-bottom: 2rem;
-    line-height: 1.2;
-    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+  .main-p-container > p {
+    font-size: 0.9rem;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+    line-height: 2;
   }
 
   .main-foot {
@@ -217,6 +407,9 @@ body {
   text-align: center;
 }
 
+.opac {
+  opacity: 0.7;
+}
 /* .columns {
   columns: 4 250px;
   column-rule: 2px solid;

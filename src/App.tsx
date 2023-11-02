@@ -3,11 +3,13 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Main } from "./pages/main";
 import { Schedule } from "./pages/schedule";
-import Team from "./pages/team";
-import Gallery from "./pages/gallery";
 import Location from "./pages/location";
 import Navbar from "./components/navbar";
 import Contact from "./pages/contact";
+import Slideshow from "./pages/slideshow";
+import Instructors from "./pages/instructors";
+import Gallery from "./pages/gallery";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -17,11 +19,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/schedule" element={<Schedule />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/instructors" element={<Gallery />} />
+          <Route path="/gallery" element={<Slideshow />} />
           <Route path="/location" element={<Location />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact-us" element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { TERipple } from "tw-elements-react";
+import Socialbar from "./socialbar";
 
 export default function Navbar() {
-  const logo = require("../images/vickerylogo.png");
+  const logo = require("../images/vickerylogo-grey-tran.png");
 
   const [status, setStatus] = useState(false);
 
@@ -23,15 +25,6 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      <div className="social-links flex-center">
-        <a
-          href="https://www.facebook.com/profile.php?id=100057636220585"
-          className="fa fa-facebook"
-        ></a>
-        <a href="" className="fa fa-instagram"></a>
-        <a href="" className="fa fa-google"></a>
-      </div>
-
       <div className="logo-container flex-center">
         <img src={logo} alt="" />
       </div>
@@ -49,7 +42,7 @@ export default function Navbar() {
       <ul className="nav-links" data-visible={`${status}`} onClick={toggleMenu}>
         {linkTree.map((el, inx) => {
           return (
-            <Link key={inx} to={el.path}>
+            <Link className="nav-anchors" key={inx} to={el.path}>
               {el.name}
             </Link>
           );
