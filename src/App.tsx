@@ -6,7 +6,7 @@ import { Schedule } from "./pages/schedule";
 import Team from "./pages/team";
 import Gallery from "./pages/gallery";
 import Location from "./pages/location";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Contact from "./pages/contact";
 
 function App() {

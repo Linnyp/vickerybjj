@@ -1,3 +1,5 @@
+import ImageGrid from "../components/ImageGrid";
+
 export default function Gallery() {
-  return <div>gallery</div>;
+  return <ImageGrid />;
 }
