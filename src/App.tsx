@@ -8,7 +8,6 @@ import Navbar from "./components/navbar";
 import Contact from "./pages/contact";
 import Slideshow from "./pages/slideshow";
 import Instructors from "./pages/instructors";
-import Gallery from "./pages/gallery";
 import Footer from "./components/footer";
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/schedule" element={<Schedule />} />
-          <Route path="/instructors" element={<Gallery />} />
+          <Route path="/instructors" element={<Instructors />} />
           <Route path="/gallery" element={<Slideshow />} />
           <Route path="/location" element={<Location />} />
           <Route path="/contact-us" element={<Contact />} />

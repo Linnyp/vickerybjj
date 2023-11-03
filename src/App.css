@@ -215,8 +215,7 @@ body {
   backdrop-filter: blur(0.1rem);
   background-color: #60656f91;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: 8%;
+  margin-top: 5%;
   padding: 10% 0;
   border: 2px solid rgba(255, 255, 255, 0.363);
   border-radius: 15px;
