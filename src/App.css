@@ -74,7 +74,6 @@ body {
 
 .home-container {
   color: #60656f;
-  background-color: #1f1d1d54;
   margin: auto;
   max-width: 1024px;
 }
@@ -94,9 +93,15 @@ body {
   background-size: cover;
 }
 
+.main-p-container {
+  border-radius: 10px;
+  border: solid black;
+  background-color: #60656f3b;
+}
+
 .main-p-container > p {
   color: white;
-  text-shadow: rgb(248, 58, 58) 1px 0 10px;
+  /* text-shadow: rgb(248, 58, 58) 1px 0 10px; */
   font-size: 1.3rem;
   padding: 0 2rem;
   margin-bottom: 3rem;
@@ -106,6 +111,7 @@ body {
 .calandar-container {
   margin-top: 2rem;
   color: #60656f;
+  font-family: "Luckiest Guy", cursive;
 }
 
 .calandar,
@@ -116,22 +122,24 @@ body {
 
 .instructor-title {
   color: #60656f;
+  font-family: "Luckiest Guy", cursive;
   font-size: 2.5rem;
-  border: solid;
+
   margin-top: 2rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  border-radius: 25px;
+  background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
+  background-size: cover;
 }
 .instructor-body {
-  border-radius: 20px;
-  background-color: #1f1d1d54;
+  border-radius: 0 0 20px 20px;
+  background-color: #60656f57;
 }
 
 .instructor-body > p {
-  text-shadow: rgb(248, 58, 58) 1px 0 10px;
+  /* text-shadow: rgb(248, 58, 58) 1px 0 10px; */
   line-height: 2;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .location-container {

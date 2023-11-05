@@ -83,7 +83,7 @@ export default function Instructors() {
       >
         <a
           className="prev"
-          style={{ fontSize: "1.5rem" }}
+          style={{ fontSize: "1.2rem" }}
           onClick={showPrevContainer}
         >
           &#10094;
@@ -91,7 +91,7 @@ export default function Instructors() {
         <h1 className="instructor-title">{containerData[1].title}</h1>{" "}
         <a
           className="next"
-          style={{ fontSize: "1.5rem" }}
+          style={{ fontSize: "1.2rem", top: "-1rem" }}
           onClick={showNextContainer}
         >
           &#10095;
