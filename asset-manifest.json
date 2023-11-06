@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vickerybjj/static/css/main.d665a989.css",
-    "main.js": "/vickerybjj/static/js/main.f26a4228.js",
+    "main.css": "/vickerybjj/static/css/main.2df7b994.css",
+    "main.js": "/vickerybjj/static/js/main.90ecfd7e.js",
     "static/media/team4.jpg": "/vickerybjj/static/media/team4.c7be78485d77d893e36b.jpg",
     "static/media/team1.jpg": "/vickerybjj/static/media/team1.e8d60908e89c277ffb6c.jpg",
     "static/media/team6.jpg": "/vickerybjj/static/media/team6.bbd52cdfb9966775d31c.jpg",
@@ -53,11 +53,11 @@
     "static/media/Carl-profile.jpg": "/vickerybjj/static/media/Carl-profile.4a360e4d81806b4ffecb.jpg",
     "static/media/Carl-Grapple-1.jpg": "/vickerybjj/static/media/Carl-Grapple-1.5012050b583e6ec51ad5.jpg",
     "index.html": "/vickerybjj/index.html",
-    "main.d665a989.css.map": "/vickerybjj/static/css/main.d665a989.css.map",
-    "main.f26a4228.js.map": "/vickerybjj/static/js/main.f26a4228.js.map"
+    "main.2df7b994.css.map": "/vickerybjj/static/css/main.2df7b994.css.map",
+    "main.90ecfd7e.js.map": "/vickerybjj/static/js/main.90ecfd7e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d665a989.css",
-    "static/js/main.f26a4228.js"
+    "static/css/main.2df7b994.css",
+    "static/js/main.90ecfd7e.js"
   ]
 }
