@@ -45,15 +45,12 @@ export default function Instructors() {
         className="instructor-container"
         style={{
           display: currentContainer === 0 ? "block" : "none",
-          position: "relative",
-          margin: "auto",
-          maxWidth: "1024px",
         }}
       >
         <a
           className="prev"
           onClick={showPrevContainer}
-          style={{ fontSize: "1.2rem" }}
+          style={{ fontSize: "1.2rem", top: "3.2rem" }}
         >
           &#10094;
         </a>
@@ -61,7 +58,7 @@ export default function Instructors() {
         <a
           className="next"
           onClick={showNextContainer}
-          style={{ fontSize: "1.2rem" }}
+          style={{ fontSize: "1.2rem", top: "3.2rem" }}
         >
           &#10095;
         </a>
@@ -76,14 +73,11 @@ export default function Instructors() {
         className="instructor-container"
         style={{
           display: currentContainer === 1 ? "block" : "none",
-          position: "relative",
-          margin: "auto",
-          maxWidth: "1024px",
         }}
       >
         <a
           className="prev"
-          style={{ fontSize: "1.2rem" }}
+          style={{ fontSize: "1.2rem", top: "3.2rem" }}
           onClick={showPrevContainer}
         >
           &#10094;
@@ -91,7 +85,7 @@ export default function Instructors() {
         <h1 className="instructor-title">{containerData[1].title}</h1>{" "}
         <a
           className="next"
-          style={{ fontSize: "1.2rem" }}
+          style={{ fontSize: "1.2rem", top: "3.2rem" }}
           onClick={showNextContainer}
         >
           &#10095;

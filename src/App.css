@@ -94,7 +94,7 @@ body {
 }
 
 .main-p-container {
-  border-radius: 10px;
+  border-radius: 20px;
   border: solid black;
   background-color: #60656f3b;
 }
@@ -112,6 +112,7 @@ body {
   margin-top: 2rem;
   color: #60656f;
   font-family: "Luckiest Guy", cursive;
+  text-decoration: underline;
 }
 
 .calandar,
@@ -120,11 +121,20 @@ body {
   height: 75vh;
 }
 
+.instructor-container {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 1024px;
+  background-color: #60656f2e;
+  border: 2px solid #60656f57;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
 .instructor-title {
   color: #60656f;
   font-family: "Luckiest Guy", cursive;
   font-size: 2.5rem;
-
   margin-top: 2rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -133,7 +143,6 @@ body {
 }
 .instructor-body {
   border-radius: 0 0 20px 20px;
-  background-color: #60656f57;
 }
 
 .instructor-body > p {
@@ -167,7 +176,7 @@ body {
   background-color: rgba(29, 28, 28, 0.541);
   font-size: 2rem;
   position: absolute;
-  top: 3rem;
+  top: 2rem;
   border-style: solid;
   border-radius: 25px;
 }
@@ -387,6 +396,15 @@ i {
   .map {
     width: 95vw;
     height: 50vh;
+  }
+
+  .instructor-title {
+    font-size: 2rem;
+  }
+
+  .prev,
+  .next {
+    padding: 0px 0.7rem;
   }
 }
 
