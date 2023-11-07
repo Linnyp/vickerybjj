@@ -142,7 +142,9 @@ body {
   background-size: cover;
 }
 .instructor-body {
+  padding: 1rem;
   border-radius: 0 0 20px 20px;
+  columns: 400px 2;
 }
 
 .instructor-body > p {
