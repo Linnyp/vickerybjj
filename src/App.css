@@ -74,8 +74,10 @@ body {
 
 .home-container {
   color: #60656f;
-  margin: auto;
+  margin: 1rem auto;
   max-width: 1024px;
+  border: 2px solid #60656f3b;
+  border-radius: 20px;
 }
 
 .home-container :nth-child(4) {
@@ -86,17 +88,17 @@ body {
   background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
   padding-top: 2rem;
   margin-bottom: 1rem;
+  border-radius: 20px;
 }
 
 .main-foot {
   background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
   background-size: cover;
+  border-radius: 20px;
 }
 
 .main-p-container {
-  border-radius: 20px;
-  border: solid black;
-  background-color: #60656f3b;
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
 .main-p-container > p {
@@ -125,7 +127,6 @@ body {
   position: relative;
   margin: 2rem auto;
   max-width: 1024px;
-  background-color: #60656f2e;
   border: 2px solid #60656f57;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.04);
@@ -375,6 +376,13 @@ i {
 
   .social-links-mob a {
     padding: 0px 1rem;
+  }
+
+  .home-container {
+    color: #60656f;
+    margin: 1rem auto;
+    max-width: 1024px;
+    border: none;
   }
 
   .home-container > h1 {
