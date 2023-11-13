@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ToTopBtn from "./ToTopBtn.";
 
 export default function ImageGrid() {
   const [images, setImages] = useState<string[]>([]);
@@ -15,8 +16,6 @@ export default function ImageGrid() {
         .keys()
         .map((key) => imageContext(key));
 
-      console.log(importedImages);
-
       setImages(importedImages);
     };
 
@@ -24,10 +23,11 @@ export default function ImageGrid() {
   }, []);
 
   return (
-    <div className="img-container">
+    <div id="photos">
       {images.map((imagePath, index) => (
         <img key={index} src={imagePath} alt={`Image ${index}`} />
       ))}
+      <ToTopBtn />
     </div>
   );
 }

@@ -9,6 +9,7 @@ import Contact from "./pages/contact";
 import Slideshow from "./pages/slideshow";
 import Instructors from "./pages/instructors";
 import Footer from "./components/footer";
+import ImageGrid from "./components/ImageGrid";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/instructors" element={<Instructors />} />
-          <Route path="/gallery" element={<Slideshow />} />
+          <Route path="/gallery" element={<ImageGrid />} />
           <Route path="/location" element={<Location />} />
           <Route path="/contact-us" element={<Contact />} />
         </Routes>
