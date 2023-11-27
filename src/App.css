@@ -1,9 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Cedarville+Cursive&family=Kanit:ital,wght@1,300&family=Lobster&family=Luckiest+Guy&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Luckiest+Guy&family=Permanent+Marker&display=swap");
 
 body {
   background-color: black;
+  color: rgb(241, 241, 241);
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.App {
+  height: 100vh;
+}
 .navbar {
   font-size: 1em;
   background-color: black;
@@ -55,7 +65,6 @@ body {
 
 .logo-container {
   margin: auto;
-  max-width: 1024px;
   background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
   background-size: cover;
 }
@@ -85,6 +94,7 @@ body {
 }
 
 .main-header {
+  text-align: center;
   background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
   padding-top: 2rem;
   margin-bottom: 1rem;
@@ -92,34 +102,36 @@ body {
 }
 
 .main-foot {
+  margin-top: 1rem;
+  text-align: center;
   background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
   background-size: cover;
   border-radius: 20px;
 }
 
 .main-p-container {
+  padding: 1rem 2rem;
   background-color: rgba(255, 255, 255, 0.04);
 }
 
 .main-p-container > p {
   color: white;
-  /* text-shadow: rgb(248, 58, 58) 1px 0 10px; */
   font-size: 1.3rem;
-  padding: 0 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.2rem;
   line-height: 2;
 }
 
 .calandar-container {
+  text-align: center;
   margin-top: 2rem;
   color: #60656f;
-  font-family: "Luckiest Guy", cursive;
   text-decoration: underline;
 }
 
 .calandar,
 .map {
-  width: 75vw;
+  width: 100%;
+  max-width: 1024px;
   height: 75vh;
 }
 
@@ -132,9 +144,14 @@ body {
   background-color: rgba(255, 255, 255, 0.04);
 }
 
+.instructor-container img {
+  display: block;
+  margin: auto;
+}
+
 .instructor-title {
   color: #60656f;
-  font-family: "Luckiest Guy", cursive;
+  text-align: center;
   font-size: 2.5rem;
   margin-top: 2rem;
   padding-bottom: 1rem;
@@ -149,17 +166,24 @@ body {
 }
 
 .instructor-body > p {
-  /* text-shadow: rgb(248, 58, 58) 1px 0 10px; */
   line-height: 2;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 
 .location-container {
+  text-align: center;
   margin-top: 2rem;
 }
 
 .location-container p {
-  margin-bottom: 2rem;
+  color: #c3c7ce;
+  background-color: #75777a5c;
+  font-size: xx-large;
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: underline;
+  margin: 0 auto;
+  padding: 2rem 0;
+  max-width: 1024px;
 }
 
 .slide-container {
@@ -205,7 +229,6 @@ body {
 }
 
 #photos {
-  border: solid gray 2px;
   /* Prevent vertical gaps */
   margin: 2rem auto;
   max-width: 1024px;
@@ -232,37 +255,41 @@ body {
 
 .contactpage-container {
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   background: no-repeat url("./images/Aesthetic-Black-Wallpaper-armbar2.jpg");
   background-size: cover;
   max-width: 1024px;
+  min-height: 800px;
   margin: auto;
 }
 
 .contact-head {
   color: #60656f;
-  margin-top: 2rem;
-  font-family: "Luckiest Guy", cursive;
+  margin-bottom: 0;
   text-decoration: underline;
 }
 
 .contact-card {
   display: flex;
   min-width: fit-content;
-  width: 85vw;
-  max-width: 700px;
+  width: 100%;
+  max-width: 1024px;
   backdrop-filter: blur(0.1rem);
   background-color: #60656f91;
   flex-direction: column;
   margin-top: 5%;
   padding: 10% 0;
-  border: 2px solid rgba(255, 255, 255, 0.363);
-  border-radius: 15px;
+}
+
+.contact-card i {
+  padding-right: 7px;
+  font-size: xx-large;
 }
 
 .contact-info {
-  color: rgb(0, 0, 0);
+  font-family: "Bebas Neue", sans-serif;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -276,14 +303,14 @@ body {
   max-width: 1024px;
 }
 
-i {
+.wrapper i {
   padding: 0px 10px;
 }
 
 .wrapper i:nth-child(1) {
   color: #4867aa;
   cursor: pointer;
-  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.4);
   transition: all ease-in-out 150ms;
 }
 
@@ -296,7 +323,7 @@ i {
 .wrapper i:nth-child(2) {
   color: #d832a1;
   cursor: pointer;
-  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
   transition: all ease-in-out 150ms;
 }
 
@@ -304,6 +331,34 @@ i {
   margin-top: -10px;
   text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
   transform: translate(0, -8);
+}
+
+footer {
+  padding: 1rem;
+  background-color: #6c0000;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  display: inline-block;
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 0 12px;
+  position: relative;
+}
+
+footer a:not(:last-child)::after {
+  content: "";
+  border: 1px solid black;
+  border-width: 1px 1px 0 0;
+  position: absolute;
+  right: -3px;
+  top: 0;
+  height: 100%;
 }
 
 /* 
@@ -394,6 +449,7 @@ i {
   }
 
   .nav-links[data-visible="true"] {
+    padding: 0;
     position: absolute;
     width: 100%;
     transform: translateY(0%);
@@ -402,6 +458,7 @@ i {
 
   .nav-links[data-visible="true"] > a {
     text-decoration: underline;
+    text-align: center;
   }
 
   .nav-links a {
@@ -442,17 +499,11 @@ i {
   .main-p-container > p {
     font-size: 0.9rem;
     padding: 0 2rem;
-    margin-bottom: 3rem;
     line-height: 2;
-  }
-
-  .main-foot {
-    margin: 0;
   }
 
   .calandar,
   .map {
-    width: 95vw;
     height: 50vh;
   }
 
@@ -463,6 +514,18 @@ i {
   .prev,
   .next {
     padding: 0px 0.7rem;
+  }
+
+  .contact-info {
+    justify-content: right;
+    padding-right: 8%;
+  }
+  footer {
+    padding: 1rem 0.5rem;
+  }
+
+  .contact-footer {
+    margin: 0;
   }
 }
 
@@ -475,20 +538,6 @@ i {
 }
 
 /*   TESTING    */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  color: rgb(241, 241, 241);
-  margin: 0.5rem;
-  font-size: 1.5rem;
-  font-family: "Bebas Neue", sans-serif;
-  text-align: center;
-}
 
 .opac {
   opacity: 0.7;
@@ -527,9 +576,7 @@ svg {
   width: 24px;
   height: 12px;
 }
-/* &:hover {
-  background-color: #e8e8e8;
-  svg {
-    fill: #000000;
-  }
-} */
+
+.max-w {
+  max-width: 1024px;
+}

@@ -6,7 +6,6 @@ import { Schedule } from "./pages/schedule";
 import Location from "./pages/location";
 import Navbar from "./components/navbar";
 import Contact from "./pages/contact";
-import Slideshow from "./pages/slideshow";
 import Instructors from "./pages/instructors";
 import Footer from "./components/footer";
 import ImageGrid from "./components/ImageGrid";

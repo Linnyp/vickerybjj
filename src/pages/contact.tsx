@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div className="contactpage-container">
       <h1 className="contact-head">Contact Us</h1>
-      <p style={{ fontSize: "1rem" }}>
+      <p style={{ fontSize: "1rem", margin: "0" }}>
         Please feel free to email us and send us your questions! <br /> Whether
         it about the arts of Jiu-Jitsu, Muay Thai, MMA, or our plans and rates,{" "}
         <br /> we are happy to reply promptly to you and are excited to see you!
@@ -16,8 +16,6 @@ export default function Contact() {
           <i className="fa fa-envelope-o" aria-hidden="true"></i>
           <p> vickerybjj@gmail.com</p>
         </div>
-
-        <div className="rounded-container"></div>
       </main>
     </div>
   );

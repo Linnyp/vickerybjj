@@ -4,6 +4,7 @@ export default function Instructors() {
   const carlMarcel = require("../images/Carl-profile.jpg");
   const carlSean = require("../images/Carl-profile2.jpg");
   const patbb = require("../images/pat-bb.jpg");
+  const patHero = require("../images/patHero2.jpg");
   const containerData = [
     {
       title: "Carl Vickery",
@@ -24,6 +25,7 @@ export default function Instructors() {
         <img style={{ maxWidth: "100%" }} src={patbb} alt="" />,
         "He has learned from some great instructors over the years, and is happy to have a home at Vickery Jiu Jitsu & MMA, where he has trained since 2015.",
         "Pat loves studying and teaching BJJ and is looking forward to seeing you in his daytime class.",
+        <img style={{ maxWidth: "100%" }} src={patHero} alt="" />,
       ],
     },
     // Add more container data as needed

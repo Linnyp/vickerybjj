@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { TERipple } from "tw-elements-react";
-import Socialbar from "./socialbar";
 
 export default function Navbar() {
   const logo = require("../images/vickerylogo-grey-tran.png");
@@ -9,7 +7,7 @@ export default function Navbar() {
   const [status, setStatus] = useState(false);
 
   let linkTree = [
-    { name: "HOME", path: "/" },
+    { name: "About", path: "/" },
     { name: "CLASS SCHEDULE", path: "/schedule" },
     { name: "INSTRUCTORS", path: "/instructors" },
     { name: "GALLERY", path: "/gallery" },
