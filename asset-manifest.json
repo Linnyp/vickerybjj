@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vickerybjj/static/css/main.c0e5e417.css",
-    "main.js": "/vickerybjj/static/js/main.af8d5055.js",
+    "main.css": "/vickerybjj/static/css/main.52801ff0.css",
+    "main.js": "/vickerybjj/static/js/main.0f21b2d7.js",
     "static/media/team1.jpg": "/vickerybjj/static/media/team1.e8d60908e89c277ffb6c.jpg",
     "static/media/dre-blue.jpg": "/vickerybjj/static/media/dre-blue.1f69d1f9c0abb4848301.jpg",
     "static/media/new-purples.jpg": "/vickerybjj/static/media/new-purples.cc8d80741aaffb430811.jpg",
@@ -45,11 +45,11 @@
     "static/media/bio1.jpg": "/vickerybjj/static/media/bio1.1866f158f087e129ba04.jpg",
     "static/media/Carl-profile.jpg": "/vickerybjj/static/media/Carl-profile.4a360e4d81806b4ffecb.jpg",
     "index.html": "/vickerybjj/index.html",
-    "main.c0e5e417.css.map": "/vickerybjj/static/css/main.c0e5e417.css.map",
-    "main.af8d5055.js.map": "/vickerybjj/static/js/main.af8d5055.js.map"
+    "main.52801ff0.css.map": "/vickerybjj/static/css/main.52801ff0.css.map",
+    "main.0f21b2d7.js.map": "/vickerybjj/static/js/main.0f21b2d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0e5e417.css",
-    "static/js/main.af8d5055.js"
+    "static/css/main.52801ff0.css",
+    "static/js/main.0f21b2d7.js"
   ]
 }
