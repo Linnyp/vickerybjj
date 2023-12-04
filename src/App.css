@@ -159,13 +159,21 @@ h1 {
   background: no-repeat url("./images/Aesthetic-Black-Wallpaper13-1536x864.jpg");
   background-size: cover;
 }
-.instructor-body {
-  padding: 1rem;
-  border-radius: 0 0 20px 20px;
-  columns: 400px 2;
+
+.instruct-left {
+  margin: auto;
 }
 
-.instructor-body > p {
+.instructor-body {
+  background-color: #ffffff2b;
+  padding: 1rem;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+}
+
+.instructor-body > div {
+  flex: 1;
+  padding: 0 3rem;
   line-height: 2;
   font-size: 0.9rem;
 }
@@ -261,7 +269,7 @@ h1 {
   background: no-repeat url("./images/Aesthetic-Black-Wallpaper-armbar2.jpg");
   background-size: cover;
   max-width: 1024px;
-  min-height: 800px;
+  min-height: 600px;
   margin: auto;
 }
 
@@ -509,6 +517,10 @@ footer a:not(:last-child)::after {
 
   .instructor-title {
     font-size: 2rem;
+  }
+
+  .instructor-body {
+    flex-direction: column;
   }
 
   .prev,
